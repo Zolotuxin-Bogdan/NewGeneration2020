@@ -62,12 +62,12 @@ namespace Gallery.Controllers
             return View();
         }
 
-        public ActionResult About()
+        public ActionResult Upload()
         {
             return View();
         }
         [HttpPost]
-        public ActionResult About(HttpPostedFileBase files)
+        public ActionResult Upload(HttpPostedFileBase files)
         {
             
             if (files != null && files.ContentType == "image/jpeg")

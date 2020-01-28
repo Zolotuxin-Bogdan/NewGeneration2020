@@ -1,7 +1,7 @@
 ﻿body {
     background-color:white;
     padding-top: 50px;
-    padding-bottom: 20px;
+    padding-bottom: 0px;
 }
 
 /*Set padding to keep content from hitting the edges */
@@ -25,20 +25,29 @@ textarea {
 }
 
 
-
-
-
-
-
-
-
-
+.text-error {
+    color: red;
+    text-align: center;
+    margin-top: 16%;
+    margin-bottom: 19%;
+}
 
 
 .picture {
     width: 256px;
     height: 144px;
     margin: 8px;
+}
+
+.pictureDownload {
+    width: 0;
+    height: 0;
+    position: relative;
+    top: -30px;
+    right: 25px;
+    outline: none;
+    display: none;
+    outline: none;
 }
 
 .pictureIMG {
@@ -51,6 +60,34 @@ textarea {
     min-width: 140px;
     margin-top: 8px;
     margin-bottom: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.pictureDelete {
+    display: none;
+    width: 0;
+    height: 0;
+    position: relative;
+    top: -40px;
+    left: 30px;
+    background-color: #ff000000;
+    border: none;
+    outline: none;
+}
+
+.pictureIMG:hover {
+    opacity: 0.4;
+}
+
+.hov:hover .pictureDownload {
+    display: block;
+}
+
+
+.hov:hover .pictureDelete {
+    display: block;
 }
 
 .body {
@@ -58,6 +95,7 @@ textarea {
     margin-top: 8px;
     margin-bottom: 8px;
     width: 100%;
+    max-height: 160px;
 }
 
 
@@ -72,60 +110,96 @@ textarea {
     margin: 5px 0 0;
 }
 
-/*========================================================================================================================================================*/
-@media (max-width:1000px)//до 1000 {
-    .navbar {
-        width: 100%;
-    }
-    
 
-    
-    
+.foot{
+    text-align:center;
+    margin:initial;
 }
+
+.htext {
+    text-align: center;
+    margin-top: 16%;
+    margin-bottom: 19%;
+}
+
+.form-group {
+    padding-top: 25px;
+}
+
+.row {
+    width: 100%;
+}
+
+.example-2 .btn-tertiary {
+    color: #555;
+    padding: 0;
+    line-height: 40px;
+    width: 300px;
+    margin: auto;
+    display: block;
+    border: 2px solid #555
+}
+
+    .example-2 .btn-tertiary:hover, .example-2 .btn-tertiary:focus {
+        color: #888;
+        border-color: #888
+    }
+
+.example-2 .input-file {
+    width: .1px;
+    height: .1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1
+}
+
+  
+
+        .example-2 .input-file + .js-labelFile .icon:before {
+            content: "\f093"
+        }
+
+        .example-2 .input-file + .js-labelFile.has-file .icon:before {
+            content: "\f00c";
+            color: #5AAC7B
+        }
+
+#submit {
+    color: black;
+    text-align: center;
+    background-color: white;
+    padding: 0;
+    line-height: 40px;
+    width: 300px;
+    margin: auto;
+    display: block;
+    border: 2px solid #555
+}
+
 
 
 
 
 /*========================================================================================================================================================*/
 @media (max-width:1100px) {
-    .bodyT {
-       
-        
-    }
+    
     .renderBody {
         width: 1100px;
-
     }
-    .bodyT{
-
-        width:100%s;
-    }
-    
-    
-    
     
 }
-/*@media(min-width:1100px) {
 
-}*/
-
-/*@media(min-width: 768px){
-    
-    navbar{
-        width:100%;
+@media (max-width:950px) {
+    .bodyT {
+        left: 235px;
+        width: 715px;
     }
-    
-    
+}
 
-}*/
-/*@media(max-width: 768px) {
-    renderBody {
-        width: 1278px;
+
+@media (min-width:1060px) {
+    .bodyT {
+        left: 270.250px;
     }
-
-    .body {
-        width: 1278px;
-    }
-}*/
-
-    
+}

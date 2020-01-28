@@ -1,13 +1,14 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <title>@ViewBag.Title - Gallery</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
-<link href="/Content/Site.css" rel="stylesheet">
+    <link href="/Content/Site.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c27b8f18b9.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="navbar navbar-inverse navbar-fixed-top">
@@ -18,22 +19,20 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-              @Html.ActionLink("Имя приложения", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
         </div>
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-                <li>@Html.ActionLink("Домашняя страница", "Index", "Home")</li>
-                <li>@Html.ActionLink("Информация", "About", "Home")</li>
-                <li>@Html.ActionLink("Связаться", "Contact", "Home")</li>
+                <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                <li>@Html.ActionLink("Upload Images", "Upload", "Home")</li>
             </ul>
             @Html.Partial("_LoginPartial")
         </div>
-    </div>
+         </div>
     </div>
     <div class="renderBody">@RenderBody()</div> 
     <hr />
     <footer>
-        <p>&copy; @DateTime.Now.Year - мое приложение ASP.NET</p>
+        <p class="foot">&copy; @DateTime.Now.Year - Gallery ASP.NET</p>
     </footer>
     
 
