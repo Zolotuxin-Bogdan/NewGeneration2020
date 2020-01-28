@@ -1,24 +1,131 @@
 ﻿body {
+    background-color:white;
     padding-top: 50px;
     padding-bottom: 20px;
 }
 
-/* Set padding to keep content from hitting the edges */
+/*Set padding to keep content from hitting the edges */
 .body-content {
     padding-left: 15px;
     padding-right: 15px;
 }
 
-/* Override the default bootstrap behavior where horizontal description lists 
-   will truncate terms that are too long to fit in the left column 
-*/
+/*Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column */
+
 .dl-horizontal dt {
     white-space: normal;
 }
 
-/* Set width on the form input elements since they're 100% wide by default */
+/*Set width on the form input elements since they're 100% wide by default */
 input,
 select,
 textarea {
     max-width: 280px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+.picture {
+    width: 256px;
+    height: 144px;
+    margin: 8px;
+}
+
+.pictureIMG {
+    vertical-align: middle;
+    width: 20%;
+    height: 11%;
+    max-height: 144px;
+    max-width: 256px;
+    min-height: 144px;
+    min-width: 140px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.body {
+    background: repeating-linear-gradient(270deg, black, transparent 100%);
+    margin-top: 8px;
+    margin-bottom: 8px;
+    width: 100%;
+}
+
+
+.bodyT {
+    width: 75%;
+    height: 160px;
+    left: 25%;
+    position: absolute;
+}
+
+.textT {
+    margin: 5px 0 0;
+}
+
+/*========================================================================================================================================================*/
+@media (max-width:1000px)//до 1000 {
+    .navbar {
+        width: 100%;
+    }
+    
+
+    
+    
+}
+
+
+
+
+/*========================================================================================================================================================*/
+@media (max-width:1100px) {
+    .bodyT {
+       
+        
+    }
+    .renderBody {
+        width: 1100px;
+
+    }
+    .bodyT{
+
+        width:100%s;
+    }
+    
+    
+    
+    
+}
+/*@media(min-width:1100px) {
+
+}*/
+
+/*@media(min-width: 768px){
+    
+    navbar{
+        width:100%;
+    }
+    
+    
+
+}*/
+/*@media(max-width: 768px) {
+    renderBody {
+        width: 1278px;
+    }
+
+    .body {
+        width: 1278px;
+    }
+}*/
+
+    
