@@ -24,3 +24,26 @@
             }
         </div>
     </h1>
+    <script>
+        document.getElementById("file").onchange = function () {
+
+            if (document.getElementById("file").value == "")
+            {
+                document.getElementById('mark').className = 'fa fa-upload';
+                document.getElementById('mark').style = "color:black;";
+            }
+            else   
+            { 
+                document.getElementById('mark').className = 'fa fa-check';
+                document.getElementById('mark').style = "color:green;";
+            }
+        }
+         
+
+        document.getElementById("submit").onclick = function () {
+            if (document.getElementById("file").value == "")
+                alert("Файл не найден...");
+            else
+                alert("Загрузка...");;
+        }
+    </script>
